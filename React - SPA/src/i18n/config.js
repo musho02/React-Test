@@ -1,0 +1,85 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+    en: {
+        translation: {
+            "Name": "Name",
+            "Age": "Age",
+            "Add Person": "Add Person",
+            "Title": "Title",
+            "Firstname": "Firstname",
+            "Lastname": "Lastname",
+            "Birthday": "Birthday",
+            "Nationality": "Nationality",
+            "CitizenID": "Citizen ID",
+            "Gender": "Gender",
+            "Mobile Phone": "Mobile Phone",
+            "Passport No": "Passport No",
+            "Expected Salary": "Expected Salary",
+            "Select Title": "Title",
+            "Select Nationality": "Select Nationality",
+            "Male": "Male",
+            "Female": "Female",
+            "Unsex": "Unsex",
+            "Edit Person": "Edit Person",
+            "Add Person": "Add Person",
+            "Delete": "Delete",
+            "pleaseEnterName": "Please enter your name",
+            "Select All": "Select All",
+            "Edit": "Edit",
+            "yyyy/mm/dd": "yyyy/mm/dd",
+            "Manage": "Manage",
+            "Reset": "Reset",
+            "Submit": "Submit",
+            "Form & Table": "Form & Table",
+            "Mr.": "Mr.",
+            "Mrs.": "Mrs.",
+            "Ms.": "Ms.",
+        },
+    },
+    th: {
+        translation: {
+            "Name": "ชื่อ",
+            "Age": "อายุ",
+            "Add Person": "เพิ่มบุคคล",
+            "Title": "คำนำหน้า",
+            "Firstname": "ชื่อจริง",
+            "Lastname": "นามสกุล",
+            "Birthday": "วันเกิด",
+            "Nationality": "สัญชาติ",
+            "CitizenID": "เลขบัตรประชาชน",
+            "Gender": "เพศ",
+            "Mobile Phone": "หมายเลขโทรศัพท์มือถือ",
+            "Passport No": "หนังสือเดินทาง",
+            "Expected Salary": "เงินเดือนที่คาดหวัง",
+            "Select Title": "คำนำหน้า",
+            "Select Nationality": "--กรุณาเลือก--",
+            "Male": "ผู้ชาย",
+            "Female": "ผู้หญิง",
+            "Unsex": "ไม่ระบุ",
+            "Delete": "ลบข้อมูล",
+            "pleaseEnterName": "กรุณากรอกชื่อ",
+            "Select All": "เลือกทั้งหมด",
+            "Edit": "แก้ไขข้อมูล",
+            "yyyy/mm/dd": "ปี/เดือน/วัน",
+            "Manage": "จัดการ",
+            "Reset": "ล้างข้อมูล",
+            "Submit": "ส่งข้อมูล",
+            "Form & Table": "การจัดการหน้าฟอร์ม",
+            "Mr.": "นาย",
+            "Mrs.": "นางสาว",
+            "Ms.": "นาง",
+        },
+    },
+};
+
+i18n.use(initReactI18next).init({
+    resources,
+    lng: 'en', // default language
+    interpolation: {
+        escapeValue: false,
+    },
+});
+
+export default i18n;

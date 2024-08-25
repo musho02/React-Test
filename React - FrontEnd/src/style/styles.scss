@@ -1,0 +1,181 @@
+body {
+    background-image: linear-gradient(to right, #6eda78  , #ffa200);
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+    .top-row,
+    .bottom-row {
+        display: flex;
+    }
+
+    .bottom-row {
+        margin: 10px 0;
+    }
+
+    .right {
+        margin-left: 300px;
+    }
+
+    .btn {
+        position: relative;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        width: 300px;
+        padding: 10px;
+        font-size: 18px;
+        height: 150px;
+        margin: 5px;
+        cursor: pointer;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: orange;
+        }
+    }
+
+    .btn-container {
+        @extend .btn;
+        width: 600px;
+    }
+
+    .triangle-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        height: 120px;
+        width: 200px;
+    }
+
+    .text {
+        justify-content: center;
+        position: absolute;
+        display: flex;
+        background-color: #6eda78 ;
+        width: 150px;
+        border-radius: 20px;
+        color: white;
+        margin-top: 145px; 
+    }
+
+    .triangle-container .text {
+        margin-top: 145px;
+    }
+}
+
+#square {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: gray;
+}
+
+#rectangle {
+    width: 260px;
+    height: 120px;
+    background: gray;
+}
+
+#circle {
+    width: 110px;
+    height: 110px;
+    background: gray;
+    border-radius: 50%
+}
+
+#oval {
+    width: 250px;
+    height: 100px;
+    background: gray;
+    border-radius: 125px / 50px;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid gray;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid gray;
+}
+
+#triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid gray;
+    border-bottom: 50px solid transparent;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid gray;
+    border-bottom: 50px solid transparent;
+}
+
+#trapezoid {
+    border-bottom: 100px solid gray;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 260px;
+}
+
+#parallelogram {
+    width: 200px;
+    height: 110px;
+    transform: skew(20deg);
+    background: gray;
+}
+
+.header-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.welcome-text {
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.034);
+    width: 1200px
+}
+

@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #6eda78, #ffa200);
+    overflow-y: auto;
+    min-height: 100vh
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #6eda78, #ffa200);
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.custom-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ant-form-item {
+    width: 100%;
+    text-align: left;
+}
+
+.custom-form .ant-form-item-label {
+    text-align: left; /* ทำให้ label ชิดซ้าย */
+}
+
+.custom-form .ant-form-item-control {
+    text-align: left; /* ทำให้ input, select, และ components อื่นๆ ชิดซ้าย */
+    padding: 0; /* ลบ padding ภายใน */
+}
+
+.ant-input, .ant-select, .ant-picker, .ant-input-number {
+    width: 100%; /* ให้ input, select, date picker, และ input number กว้างเต็มที่ */
+    margin: 0; /* ลบ margin ภายใน */
+    padding-left: 0; /* ลบ padding ทางด้านซ้ายเพื่อชิดซ้ายมากขึ้น */
+}
+
+.custom-form .ant-input {
+    padding-left: 8px; /* กำหนดระยะ padding เล็กน้อยให้ input ชิดซ้าย */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.form-actions .ant-btn {
+    margin-left: 8px;
+}
+
+.form-row-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-group-horizontal .ant-radio-group {
+    display: flex;
+    flex-direction: row; /* จัดแนวนอน */
+}
+
+.radio-group-horizontal .ant-radio-wrapper {
+    margin-right: 16px; /* เพิ่มระยะห่างระหว่าง Radio */
+}
+
+.radio-group-horizontal .ant-radio-wrapper:last-child {
+    margin-right: 0; /* ลบระยะห่างขวาสำหรับ Radio ตัวสุดท้าย */
+}
+
+.header-container {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: larger;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.table-container {
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของตาราง */
+    margin: 10px auto; /* จัดตารางให้อยู่ตรงกลางแนวนอน */
+    padding: 16px; /* ระยะห่างรอบๆ ตาราง */
+    border: 1px solid transparent; /* เส้นขอบตาราง */
+    border-radius: 4px; /* มุมของขอบตาราง */
+    max-height: 70vh;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between; /* ให้ปุ่มและ pagination อยู่ด้านซ้ายและขวา */
+    align-items: center; /* จัดให้ปุ่มและ pagination อยู่ในแนวเดียวกัน */
+    margin-bottom: 16px; /* ระยะห่างระหว่าง header กับตาราง */
+}
+
+.table-actions {
+    display: flex;
+    align-items: center;
+}
+
+.table-actions .ant-btn {
+    margin-left: 8px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.pagination {
+    margin-left: auto; /* ให้ pagination อยู่ด้านขวา */
+}
